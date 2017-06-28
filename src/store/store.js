@@ -14,7 +14,7 @@ const defaultState = {
     comments
 };
 
-const history = createHistory()
+const history = createHistory();
 const store = createStore(rootReducer, defaultState, compose(
     applyMiddleware(routerMiddleware(history))
 ));
