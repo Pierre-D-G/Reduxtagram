@@ -4,15 +4,16 @@
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "redux": "^3.7.1",
     "react-addons-css-transition-group": "*",
+    "react-dom": "^15.6.1",
     "react-redux": "*",
     "react-router": "*",
+    "react-router-dom": "^4.1.1",
     "react-router-redux": "*",
     "react-transform-catch-errors": "*",
     "react-transform-hmr": "*",
-    "redbox-react": "*"
+    "redbox-react": "*",
+    "redux": "^3.7.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
