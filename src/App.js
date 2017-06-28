@@ -14,7 +14,7 @@ class App extends Component {
             </Link>
           </h1>
           <Route exact path='/' component={PhotoGrid} />
-          <Route path='/single' component={SinglePhoto} />
+          <Route path='/view/:postId' component={SinglePhoto} />
         </div>
       </Router>
     );

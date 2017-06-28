@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "raven-js": "^2.3.0",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "*",
     "react-dom": "^15.6.1",
