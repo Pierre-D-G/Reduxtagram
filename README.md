@@ -35,11 +35,11 @@ Your app is ready to be deployed!
 ## TODO 
 
 * Create Components
-    - PhotoGrid component 
+    - ~~PhotoGrid component~~ 
       - Display all photos
-    - Single component 
+    - ~~Single component~~ 
       - Display a single photo
-    - Comments Component
+    - ~~Comments Component~~
       - Hold and display a photo's comments
 
 * Adding and Deleting Comments
@@ -47,6 +47,15 @@ Your app is ready to be deployed!
 
 * Liking a photo
   - Display number of likes
+
+###
+
+* Move Data to actual database
+ - Create API to handle data from database
+
+* User Accounts
+   - Login/Log Out
+   - Authentication
 
 ## LICENSE MIT
 
