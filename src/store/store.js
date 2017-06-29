@@ -1,6 +1,6 @@
 import { createStore, compose, applyMiddleware } from 'redux';
-import { createHistory } from 'history/createHashHistory';
-import { routerMiddleware } from 'react-router-redux';
+import createBrowserHistory  from 'history/createBrowserHistory';
+import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux';
 
 import posts from '../data/posts';
 import comments from '../data/comments';
@@ -14,9 +14,13 @@ const defaultState = {
     comments
 };
 
-const history = createHistory();
+const browserHistory = createBrowserHistory();
+const historyRouterMiddleware = routerMiddleware(browserHistory)
+
 const store = createStore(rootReducer, defaultState, compose(
-    applyMiddleware(routerMiddleware(history))
+    applyMiddleware(historyRouterMiddleware)
 ));
+
+export const history = syncHistoryWithStore(browserHistory, store)
 
 export default store;
