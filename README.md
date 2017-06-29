@@ -48,7 +48,7 @@ Your app is ready to be deployed!
 * Liking a photo
   - Display number of likes
 
-###
+### Further Out
 
 * Move Data to actual database
  - Create API to handle data from database
