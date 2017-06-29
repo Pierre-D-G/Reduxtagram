@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link, Switch } from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
 
@@ -13,19 +12,12 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <ConnectedRouter history={history}>
+        <Router history={history}>
           <Switch>
-            <div>
-              <h1>
-                <Link to='/'>
-                  Reduxtagram
-              </Link>
-              </h1>
               <Route exact path='/' component={PhotoGrid} />
               <Route path='/view/:postId' component={SinglePhoto} />
-            </div>
           </Switch>
-        </ConnectedRouter>
+        </Router>
       </Provider>
     );
   }
