@@ -6,14 +6,16 @@ import Comments from './Comments';
 class SinglePhoto extends Component {
   
   render() {
-    const i = this.props.posts.findIndex((post) => post.code === this.props.match.params.postId);
+    const postId = this.props.match.params.postId;
+    const i = this.props.posts.findIndex((post) => post.code === postId);
     const post = this.props.posts[i];
+    const postComments = this.props.comments[postId] || [];
     return (
       <div>
         <Home />
         <div className="single-photo">
           <Photo i={i} post={post} {...this.props}/>
-          <Comments />
+          <Comments postComments={postComments} />
         </div>
       </div>
     );
