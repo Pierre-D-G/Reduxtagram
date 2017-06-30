@@ -38,7 +38,7 @@ Your app is ready to be deployed!
     - ~~PhotoGrid component~~ 
       - ~~Display all photos~~
     - ~~Single component~~ 
-      - Display a single photo
+      - ~~Display a single photo~~
     - ~~Comments Component~~
       - Hold and display a photo's comments
 
