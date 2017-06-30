@@ -36,17 +36,17 @@ Your app is ready to be deployed!
 
 * Create Components
     - ~~PhotoGrid component~~ 
-      - Display all photos
+      - ~~Display all photos~~
     - ~~Single component~~ 
       - Display a single photo
     - ~~Comments Component~~
       - Hold and display a photo's comments
 
 * Adding and Deleting Comments
-  - Display number of comments
+  - ~~Display number of comments~~
 
 * Liking a photo
-  - Display number of likes
+  - ~~Display number of likes~~
 
 ### Further Out
 
