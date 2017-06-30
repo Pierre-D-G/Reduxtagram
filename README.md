@@ -40,7 +40,7 @@ Your app is ready to be deployed!
     - ~~Single component~~ 
       - ~~Display a single photo~~
     - ~~Comments Component~~
-      - Hold and display a photo's comments
+      - ~~Hold and display a photo's comments~~
 
 * Adding and Deleting Comments
   - ~~Display number of comments~~
