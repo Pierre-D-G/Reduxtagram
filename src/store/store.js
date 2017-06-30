@@ -16,8 +16,9 @@ const defaultState = {
 
 const browserHistory = createBrowserHistory();
 const historyRouterMiddleware = routerMiddleware(browserHistory)
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(rootReducer, defaultState, compose(
+const store = createStore(rootReducer, defaultState, composeEnhancers(
     applyMiddleware(historyRouterMiddleware)
 ));
 

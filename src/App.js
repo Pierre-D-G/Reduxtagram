@@ -5,8 +5,8 @@ import { Provider } from 'react-redux';
 
 import store, { history } from './store/store';
 
-import Dispatch from './components/Dispatch';
-import SinglePhoto from './components/SinglePhoto';
+import Main from './containers/Main';
+import Single from './containers/Single';
 
 class App extends Component {
   render() {
@@ -14,9 +14,9 @@ class App extends Component {
       <Provider store={store}>
         <Router history={history}>
           <Switch>
-              <Route exact path='/' component={Dispatch} />
-              <Route path='/view/:postId' component={SinglePhoto} />
-          </Switch>
+              <Route exact path='/' component={Main} />
+              <Route path='/view/:postId' component={Single} />
+          </Switch>         
         </Router>
       </Provider>
     );
