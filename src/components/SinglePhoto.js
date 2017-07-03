@@ -15,7 +15,7 @@ class SinglePhoto extends Component {
         <Home />
         <div className="single-photo">
           <Photo i={i} post={post} {...this.props}/>
-          <Comments postComments={postComments} />
+          <Comments postComments={postComments} {...this.props} />
         </div>
       </div>
     );

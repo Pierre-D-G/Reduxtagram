@@ -9,12 +9,14 @@ export function increment(index) {
 
 // Add a comment to a photo
 
-export function addComment(postId, comment, author) {
+export function addComment(postId, author, comment) {
     return {
         type: 'ADD_COMMENT',
         postId,
-        comment,
-        author
+        author,
+        comment
+        
+        
     }
 }
 
