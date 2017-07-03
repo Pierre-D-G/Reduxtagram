@@ -44,6 +44,8 @@ Your app is ready to be deployed!
 
 * Adding and Deleting Comments
   - ~~Display number of comments~~
+  - ~~Adding a comment~~
+  - Deleting a comment
 
 * Liking a photo
   - ~~Display number of likes~~
